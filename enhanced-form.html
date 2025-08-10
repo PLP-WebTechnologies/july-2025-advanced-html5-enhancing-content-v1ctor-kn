@@ -6,9 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Enhanced Form</title>
     <link rel="stylesheet" href="styles.css">
-
+    <h1> my html assignment</h1>
+</head>
+<nav>
+    <ul>
+        <li><a href="#tables">tables</a></li>
+        <li><a href="#media elements">media</a></li>
+        <li><a href="#formsection">formsection</a></li>
+    </ul>
+</nav>
 <body>
-    <h1>Enhanced Form</h1>
+    <section id="tables">
+        <h2>Tables</h2>
+        <p>This section contains a table with sample data.</p>
+    <h1>Class Role Call</h1>
         <tables>
             <table border="1">
                 <thead>
@@ -41,25 +52,54 @@
 
                 </tbody>
             </table>
+            </section>
+            <section id="media elements">
+                <h2>Media Elements</h2>
+                <p>This section contains an image, audio, and video elements.</p>
+            <p> here is a sample of an image element</p>
             <img src="luffy.jpg" alt="Luffy" width="300" height="400">
+            <p>This is an example of an enhanced form with various input types and media elements.</p>
+            <br>
+            <p> Here is a sample of an audio element</p>
             <audio controls>
                 <source src="nakam-sai-lil-maina-x-sosatheprodigy-128-ytshorts.savetube.me.mp3" type="audio/mpeg">
                 Your browser does not support the video tag.
             </audio>
+            <br><br>
+            <p>Here is a sample of a video element</p>
             <video controls width="600" height="400">
                 <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
                 Your browser does not support the video tag.
                 </video>
-                <form action="#" method="post">
+                <br><br>
+            </section>
+            <section id="formsection">
+                <h2>Form Section</h2>
+                <p>This section contains a form with various input types and attributes.</p>
+                <form action="#" method="post" autocomplete="on">
                     <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" required>
+                    <input type="text" id="name" minlength="7" name="name" autocomplete="additional-name">
                     <br>
                     <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
+                    <input type="email" id="email" pattern="^[a-zA-Z0-9._%+-]+@example\.com$" name="email" autocomplete="email" required>
                     <br>
                     <label for="age">Age:</label>
                     <input type="number" id="age" name="age" min="0" max="120">
                     <br>
-                    <input type="submit" value="Submit">
+                    <label for="comments">Comments:</label>
+                    <textarea id="comments" name="comments" rows="4" cols="50" placeholder="Enter your comments here broski...."></textarea>
+                    <br>
+                    <label for =submit>Submit</label>
+                    <input type="submit" id="submit" value="Submit">
+                </form>
+            </section>
 </body>
+<footer>
+    <p>&copy; 2025 My HTML Assignment</p>
+    <p>Created by v1ctor_kn</p>
+    <p>Contact: <a href="mailto:mwendavictor42@gmail.com "></a>
+    <a href="tel:o726143585">0726143585</a>
+
+
+    </footer>
 </htmml>
